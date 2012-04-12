@@ -12,7 +12,7 @@ if 'publish' in sys.argv:
 read = lambda filepath: codecs.open(filepath, 'r', 'utf-8').read()
 
 setup(
-    name='django-imagekit',
+    name='django-fts-odeon',
     version='1.0',
     description='django-fts-odeon is a fork of django-fts ( http://code.google.com/p/django-fts/ ). The only supported back-end is PostgreSQL',
     long_description=read(os.path.join(os.path.dirname(__file__), 'README')),
@@ -30,7 +30,6 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
         'Topic :: Utilities'
     ],
 )
