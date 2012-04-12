@@ -1,10 +1,17 @@
 "Base Fts class."
 
+
 from django.db import transaction
 from django.db import models
 from django.conf import settings
 
 from django.core.exceptions import ImproperlyConfigured
+
+import sys
+import os
+
+sys.path.append(settings.PROJECT_ROOT)
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
 class InvalidFtsBackendError(ImproperlyConfigured):
     pass
