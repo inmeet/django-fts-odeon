@@ -11,12 +11,9 @@ if 'publish' in sys.argv:
 
 read = lambda filepath: codecs.open(filepath, 'r', 'utf-8').read()
 
-# Dynamically calculate the version based on imagekit.VERSION.
-version = __import__('fts').get_version()
-
 setup(
     name='django-imagekit',
-    version=version,
+    version='1.0',
     description='django-fts-odeon is a fork of django-fts ( http://code.google.com/p/django-fts/ ). The only supported back-end is PostgreSQL',
     long_description=read(os.path.join(os.path.dirname(__file__), 'README')),
     author='Stefan Talpalaru',
